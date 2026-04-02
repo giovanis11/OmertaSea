@@ -850,6 +850,107 @@ textarea {
   font-size: 0.94rem;
 }
 
+.faq-list {
+  display: grid;
+  gap: 18px;
+}
+
+.faq-item {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  border: 1px solid rgba(20, 41, 59, 0.08);
+  border-radius: 28px;
+  background: linear-gradient(180deg, #f9fcfd, #f1f6f9);
+  box-shadow: 0 18px 42px rgba(7, 22, 34, 0.08);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease;
+}
+
+.faq-item::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 5px;
+  background: linear-gradient(180deg, #45b4c0, #2f748d);
+  opacity: 0.42;
+  transition: opacity 180ms ease;
+}
+
+.faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 22px 24px;
+  cursor: pointer;
+  list-style: none;
+  color: var(--navy);
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #dceaf2;
+  color: #24566e;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1;
+  transition:
+    transform 180ms ease,
+    background-color 180ms ease,
+    color 180ms ease;
+}
+
+.faq-item p {
+  margin: 0;
+  padding: 0 24px 24px;
+  color: var(--muted);
+  line-height: 1.72;
+  max-width: 72ch;
+}
+
+.faq-item:hover,
+.faq-item:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 0 24px 54px rgba(7, 22, 34, 0.1);
+}
+
+.faq-item[open] {
+  border-color: rgba(47, 116, 141, 0.22);
+  background: linear-gradient(180deg, #fbfeff, #edf6fa);
+}
+
+.faq-item[open]::before {
+  opacity: 0.9;
+}
+
+.faq-item[open] summary {
+  padding-bottom: 14px;
+}
+
+.faq-item[open] summary::after {
+  content: "\2212";
+  transform: rotate(180deg);
+  background: #2f748d;
+  color: #f6fdff;
+}
+
 .contact-stack {
   display: grid;
   gap: 12px;
