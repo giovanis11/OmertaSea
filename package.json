@@ -1,0 +1,28 @@
+{
+  "name": "omerta-sea",
+  "version": "1.0.0",
+  "description": "Private boat charters in Halkida, Greece - Omerta Sea",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giovanis11/OmertaSea.git"
+  },
+  "keywords": [
+    "boat-charter",
+    "halkida",
+    "greece",
+    "vercel"
+  ],
+  "author": "Omerta Sea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giovanis11/OmertaSea/issues"
+  },
+  "homepage": "https://github.com/giovanis11/OmertaSea#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
