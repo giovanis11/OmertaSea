@@ -962,6 +962,47 @@ textarea {
   font-weight: 600;
 }
 
+.contact-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.84);
+  color: var(--navy);
+  box-shadow: 0 8px 18px rgba(7, 22, 34, 0.06);
+  transition:
+    transform 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.social-link:hover,
+.social-link:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(47, 116, 141, 0.35);
+  background: var(--navy);
+  color: #f6fdff;
+  box-shadow: 0 12px 22px rgba(7, 22, 34, 0.1);
+}
+
+.social-icon {
+  width: 17px;
+  height: 17px;
+  flex: 0 0 17px;
+}
+
 .booking-form {
   display: grid;
   gap: 16px;
