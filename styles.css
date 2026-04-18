@@ -362,6 +362,64 @@ textarea {
   padding-bottom: 24px;
 }
 
+.follow-strip {
+  position: relative;
+  z-index: 2;
+  margin-top: 12px;
+  padding: 0 0 10px;
+}
+
+.follow-strip .container {
+  display: flex;
+  justify-content: center;
+}
+
+.follow-strip-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: nowrap;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 26px 34px;
+  border: 1px solid rgba(20, 41, 59, 0.08);
+  border-radius: 38px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 26px 60px rgba(7, 22, 34, 0.1);
+}
+
+.follow-strip-title {
+  margin: 0;
+  color: var(--navy);
+  font-size: clamp(1.1rem, 2.2vw, 1.55rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.follow-strip-socials {
+  justify-content: center;
+  gap: 12px;
+  margin-top: 0;
+}
+
+.follow-strip-socials .social-link {
+  width: 54px;
+  height: 54px;
+  border-color: rgba(20, 41, 59, 0.1);
+  background: #ffffff;
+  box-shadow: 0 14px 30px rgba(7, 22, 34, 0.08);
+}
+
+.follow-strip-socials .social-icon {
+  width: 20px;
+  height: 20px;
+  flex-basis: 20px;
+}
+
 .intro-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1195,6 +1253,15 @@ textarea {
   .stats-row {
     grid-template-columns: 1fr;
   }
+
+  .follow-strip {
+    margin-top: 10px;
+  }
+
+  .follow-strip-card {
+    gap: 16px;
+    padding: 22px 24px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -1231,6 +1298,27 @@ textarea {
   .review-card,
   .intro-grid {
     padding: 22px;
+  }
+
+  .follow-strip-card {
+    gap: 12px;
+    padding: 18px 16px;
+    border-radius: 28px;
+  }
+
+  .follow-strip-title {
+    font-size: 1rem;
+  }
+
+  .follow-strip-socials .social-link {
+    width: 46px;
+    height: 46px;
+  }
+
+  .follow-strip-socials .social-icon {
+    width: 18px;
+    height: 18px;
+    flex-basis: 18px;
   }
 
   .fleet-entry {
